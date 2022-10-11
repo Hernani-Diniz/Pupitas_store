@@ -4,7 +4,7 @@
     margin:0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Quicksan', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 h1{
@@ -106,11 +106,12 @@ body{
 
 
 /*Home Page*/
-
+ 
+ 
 #hero{
-    background-image: url("image/hero4.png");
     height : 90vh;
     width: 100%;
+    background-image: url("image/hero4.png");
     background-size: cover;
     background-position: top 25% right 0;
     padding: 0 80px;
@@ -131,7 +132,7 @@ body{
 }
 
 #hero button{
-    /* background-image: url('image/button.png'); */
+    
     background-color: rgb(235, 13, 235); 
     text-decoration: underline;
     color: black;
@@ -144,28 +145,26 @@ body{
     font-size: 15px;
 }
 
+
+
+
+
 #features{
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    border-top: 2px solid black;
 
 }
-
 
 #features .fe-box{
     width: 180px;
     text-align: center;
     padding:25px 15px;
-    box-shadow: 20px 20px 34px rgba(0,0,0,0.03);
-    border: 1px solid #cce7d0;
+    border: 1px solid rgb(235, 13, 235);
     border-radius: 4px;
     margin: 15px 0;
-}
-
-#features .fe-box:hover{
-    box-shadow: 10px 10px 54px rgba(70,62,221,0.1);
-
 }
 
 #features .fe-box img{
@@ -184,20 +183,27 @@ body{
 }
 
 #features .fe-box:nth-child(2) h6{
-    background-color: #cdebbc;
+    background-color: #fddde4;
 }
 
 #features .fe-box:nth-child(3) h6{
-    background-color: #d1e8f2;
+    background-color: #fddde4;
 }
 
 #features .fe-box:nth-child(4) h6{
-    background-color: #cdd4f8;
+    background-color: #fddde4;
 }
 
 
 #product1{
     text-align: center;
+}
+
+#product1 .pro-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    flex-wrap: wrap;
 }
 
 #product1 .pro{
@@ -210,6 +216,7 @@ body{
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
     margin: 15px 0;
     transition:0.2s ease ;
+    position: relative;
 }
 
 #product1 .pro:hover{
@@ -221,9 +228,45 @@ body{
     border-radius: 20px;
 }
 
-#product1 .pro .desc{
+#product1 .pro .des{
     text-align :center;
     padding : 10px 0;
 }
+
+#product1 .pro .des h5{
+    padding-top: 7px ;
+    color: rgb(235, 13, 235);
+    font-size:14px;
+}
+
+#product1 .pro .des i{
+    font-size: 12px;
+    color: rgb(143, 3, 131);
+}
+
+
+#product1 .pro .des h4{
+    padding-top: 7px ;
+    font-weight: 700;
+    font-size: large;
+    color: rgb(255, 54, 141);
+   
+}
+
+#product1 .pro .cart{
+    width:40px;
+    height:40px;
+    line-height:40px;
+    border-radius:50px;
+    background-color: #fddde4;
+    font-weight: 500;
+    color:blueviolet;
+    border: 1px solid #fddde4;
+    position: absolute;
+    bottom: 20px;
+    right:10px;
+}
+
+/* TODO: Fix icon carrinho compras */
 
 /*Shop Page*/
