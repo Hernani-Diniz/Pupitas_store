@@ -44,6 +44,30 @@ p{
     margin: 40px 0;
 }
 
+button.normal{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 15px 30px;
+    color: black;
+    background-color: #fff;
+    border-radius: 4px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: 0.2s;
+}
+
+button.white{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 11px 18px;
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border:1px solid #fff;
+    transition: 0.2s;
+}
+
 body{
     width: 100%;
 }
@@ -119,6 +143,7 @@ body{
     flex-direction: column;
     align-items:flex-start ;
     justify-content: center;
+    
 
 
 }
@@ -154,7 +179,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    border-top: 2px solid black;
+   
 
 }
 
@@ -210,7 +235,7 @@ body{
     width:23%;
     min-width: 250px;
     padding: 10px 12px;
-    border: 1px solid #cce7d0;
+    border: 1px solid rgb(235, 13, 235);
     border-radius: 25px;
     cursor: pointer;
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.2);
@@ -265,6 +290,89 @@ body{
     position: absolute;
     bottom: 20px;
     right:10px;
+}
+
+#banner{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image:url("image/banner/b2.jpg");
+    width:100%;
+    height:40vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+#banner h4{
+    color: #fff;
+    font-size: 16px;
+}
+
+#banner h2{
+    color: #fff;
+    font-size: 30px;
+    padding: 10px 0px
+}
+
+#banner h2 span{
+    color: rgb(235, 13, 235);
+}
+
+#banner button:hover{
+    background: rgb(235, 13, 235);
+    color: white;
+}
+
+#sm-banner{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+
+#sm-banner .banner-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    background-image:url("image/banner/b17.jpg");
+    min-width:800px;
+    height:50vh;
+    background-size: cover;
+    background-position: center;
+    padding: 30px;
+}
+
+#sm-banner h4{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+
+}
+
+#sm-banner h2{
+    color: #fff;
+    font-size: 28px;
+    font-weight: 800;
+
+}
+
+#sm-banner span{
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom:15px;
+
+}
+
+#sm-banner button:hover{
+    background: black;
+    color: white;
+    border: 1px solid black;
 }
 
 /* TODO: Fix icon carrinho compras */
